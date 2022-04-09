@@ -8,12 +8,13 @@ public class Main {
         String result = "";;
         System.out.print("Введите предложение: ");
         String word = in.nextLine();
-        findLastSymbol(word);
+        System.out.printf("Последний символ строчки %s.", findLastSymbol(word));
+
 
     }
-    public static void findLastSymbol(String word){
+    public static char findLastSymbol(String word){
         int lastIndex = word.length() - 1;
         char[] words = word.toCharArray();
-        System.out.printf("Последний символ строчки %s.", words[lastIndex]);
+        return words[lastIndex];
     }
 }
